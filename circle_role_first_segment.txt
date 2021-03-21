@@ -1,0 +1,29 @@
+# Circle Role create mockup of a database
+
+Create mockup database using the reddit.csv making sure the model works.
+
+*Note: For the final segment our Database needs to:
+
+* Stores static data for use during the project
+* Interfaces with the project in some format (e.g., scraping updates the database, or database   connects to the model)
+* Includes at least two tables (or collections if using MongoDB)
+* Includes at least one join using the database language (not including any joins in Pandas)
+* Includes at least one connection string (using SQLAlchemy or PyMongo)
+
+(an ERD is only reqired if SQL database is used)
+
+## Goal
+
+The 3 most prominent subreddits whose communities are built around the topic of stock market investing each have different constructions of culture. By running a sentiment-gauging cross-analysis over the headline/title of posts of each, can we teach a Machine Learning model to discern which of the subreddits was most likely the subreddit of origin?
+
+## Group and Roles for First Segment
+
+1. Adam Boone, Square
+2. Brendan deVidal, Triangle
+3. Myself, Circle
+4. Richard Wyatt, X
+
+## Technologies used
+
+1. Pyhton
+
