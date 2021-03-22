@@ -14,3 +14,8 @@ Question-To-Answer: Utilizing the reddit.csv, can we train a machine learning mo
 8. Tableau - visualization
 9. HTML & CSS - visualization
 10. VS Code Basic - file creation, idea structure, and organization
+
+### Communication Pattern
+Have created Slack Group & Text Chain for rapid communication.
+
+As well, will be meeing both Tuesday & Thursday during class time, as well as a check in on Sunday morning.
