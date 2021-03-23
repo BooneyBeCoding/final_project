@@ -1,6 +1,6 @@
 # final_project
 
-## Project Hypothsys
+## Project Hypothesis
 Question-To-Answer: Utilizing the reddit.csv, can we train a machine learning model to correctly predict from what stock-based subreddit a particular post title comes from.
 
 ### TECHNOLOGIES and METHODOLOGIES LIST:
