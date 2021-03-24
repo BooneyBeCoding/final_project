@@ -1,7 +1,9 @@
 # final_project
 
-## Project Hypothesis
-Question-To-Answer: Utilizing the reddit.csv, can we train a machine learning model to correctly predict from what stock-based subreddit a particular post title comes from.
+## RESEARCH QUESTION AND PROPOSAL:
+- The 3 most prominent subreddits whose communities are built around the topic of stock market investing each have different constructions of culture. 
+- By running a sentiment-gauging cross-analysis over the headline/title of posts of each, can we teach a Machine Learning model to discern which of the subreddits was most likely the subreddit of origin?
+
 
 ### TECHNOLOGIES and METHODOLOGIES LIST:
 1. Kaggle - datasets
