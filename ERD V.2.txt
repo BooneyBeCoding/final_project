@@ -1,0 +1,32 @@
+ERD V.2.txt
+
+
+"Initial Reddit Data" 
+---
+Title PK varchar
+Score int
+subreddit varchar
+url varchar
+num-comments int
+body varchar
+date date1  
+
+"VADER Output"
+----
+Title PK varchar
+WSB? int
+pos int
+neutral int
+neg int
+compound int
+
+"MLM Output"
+---
+Title PK varchar
+WSB? int
+pos int
+neutral int
+neg int
+compound int
+predict int
+correct int
