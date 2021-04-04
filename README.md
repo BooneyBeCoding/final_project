@@ -47,3 +47,6 @@ identify posts based purely on the sentiment analysis.
 Have created Slack Group & Text Chain for rapid communication.
 
 As well, will be meeing both Tuesday & Thursday during class time, as well as a check in on Sunday morning.
+
+### Machine Learning Model
+Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.  In the next segment we may be able to analyse specific words for each of the 3 subreddits to see if there are  common terms that would trigger the accuracy.
