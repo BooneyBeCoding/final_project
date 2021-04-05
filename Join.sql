@@ -17,3 +17,6 @@ INTO Final_Combined_Output
 FROM Initial_Reddit_Data AS ird
 INNER JOIN MLM_Output AS mlm
 ON ird.Title = mlm.Title
+
+
+

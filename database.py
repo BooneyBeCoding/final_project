@@ -1,13 +1,22 @@
+
+
+
+
+
 from sqlalchemy import create_engine
 
 import psycopg2
 
-import pandas as pds
+
+
 
  
 # Note: There was some late confusion on whether the data in process (Initial Data => VADER => MLM => Final) was going to be split
-# into seperate dataframes at each stage or if it would be itterately added to the same dataframe. At the moment, below tables/dataframes
-# do not match those described in the ERD, but induction should generally follow the same format.
+# into seperate dataframes at each stage or if it would be iteratively added to the same dataframe. At the moment, below tables/dataframes
+# do not match those described in the ERD (along with some field names/positions), but induction should generally follow the same format. 
+# Will rectify in next segment.
+
+
 
 
          
@@ -45,7 +54,8 @@ finally:
 
 
 
-    alchemyEngine           = create_engine('postgresql+psycopg2://test:test@127.0.0.1/test', pool_recycle=3600);
+   
+alchemyEngine           = create_engine('postgresql+psycopg2://test:test@127.0.0.1/test', pool_recycle=3600);
 
 postgreSQLConnection    = alchemyEngine.connect();
 
