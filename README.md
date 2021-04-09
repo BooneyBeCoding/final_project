@@ -50,3 +50,7 @@ As well, will be meeing both Tuesday & Thursday during class time, as well as a 
 
 ### Machine Learning Model
 Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.  In the next segment we may be able to analyse specific words for each of the 3 subreddits to see if there are  common terms that would trigger the accuracy.
+
+### Slide Presentation
+
+https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit#slide=id.gcf36b4cb9d_0_3
