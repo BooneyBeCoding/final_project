@@ -53,4 +53,4 @@ Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a L
 
 ### Slide Presentation
 
-https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit#slide=id.gcf36b4cb9d_0_3
+https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit?usp=sharing
