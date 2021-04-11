@@ -55,10 +55,15 @@ As of now, the data splitting is set to randomizing the test and train datasets.
 Since we are training our model to determine if posts are from WSB or not off of Sentiment Analysis, we are utilizing Logistic Regression for our Machine Learning Model.  This model has the benefit of being quick to run and rather easy to understand, yet has some limitation when it comes to what pieces of the dataset can be utilized as to not throw off the model.
 ### Changes Made to the model from seg 2 to 3
 One of the main changes form segment 2 to segment 3 is the removal of the "Score" and "Number of Comments" columns from the training and testing datasets.  We found that both of those columns had much higher totals for WallStreetBets than it did for the 2 other subreddits, thus causing our model to see that and be able to return a 100% accuracy score.
-### Training of Model
-After removal of the "Score" and "Number of Comments" columns our model is returning a more accurate score for a MLM.  
-### Accuracy Score
-Currently our score is at 67%.  We will continue to refine this model, as we suspect this may be because it is marking everything as 0 which with .333 of our dataset being given to each subreddit, our model is essentially "cheating" its way to that score.
+
+Upon further evaluation, we realized the model was marking everything at 0 "not WSB" and getting a 2 thirds score (67%) as that is basically what the dataset breaks down to be. One of the reasons for this was that the r/stocks and r/WallStreetBets sentiment scores were very similar.  As well the dataset was scewed to have 1/3 be from WSB and 2/3 be from not WSB.  
+
+After removing the r/stocks sets from the DF, we recieved a score of 50% though you could see the DF trying to acutally guess.
+
+With the additions of adding Neural Nets, and optomizations, we could raise the accuracy up to 64%.
+
+As well, after adding back in the "Score" and "Number of Comments" tabs, the origional model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 90%+.
+
 ## Slide Presentation
 
 https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit?usp=sharing
