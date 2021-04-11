@@ -64,6 +64,10 @@ With the additions of adding Neural Nets, and optomizations, we could raise the 
 
 As well, after adding back in the "Score" and "Number of Comments" tabs, the origional model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 100%.
 
-## Slide Presentation
+### Slide Presentation
 
 https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit?usp=sharing
+
+### Dasboard
+
+https://public.tableau.com/profile/paul.smith1805#!/vizhome/final_projectGroup6/final_projectGroup6
