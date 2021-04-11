@@ -43,7 +43,22 @@ identify posts based purely on the sentiment analysis.
 9. HTML & CSS - visualization
 10. VS Code Basic - file creation, idea structure, and organization
 
-### Communication Pattern
-Have created Slack Group & Text Chain for rapid communication.
+## Machine Learning Model
+Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.  
+### Data PreProcessing for MLM
+The Dataset we are utilizing is very well formatted and uniform.  For preprosessing, we removed the "Body" column from the dataframe as it was not always utilized by the post, and not necessary for what we are wanting to train the model on. As well, after adding 4 columns to the DF for the Vader analysis, we modified the "subreddit" column to return a 1 if the post was from r/WallStreetBets and a 0 if the post was from r/stocks or r/investing.
+### Feature Engineering & Selection
+As mentioned above, we have chosen to utilize [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) to read the "title" of each post and return a sentiment score for positive, negative, neutral, and compound.  We chose Vader as it is an MIT created open source sentiment analysis tool that specializes in social media.  Once run on each post, these scores were then added to each post in the dataframe.
+### Data Spliting
+As of now, the data splitting is set to randomizing the test and train datasets.  
+### Model Choice
+Since we are training our model to determine if posts are from WSB or not off of Sentiment Analysis, we are utilizing Logistic Regression for our Machine Learning Model.  This model has the benefit of being quick to run and rather easy to understand, yet has some limitation when it comes to what pieces of the dataset can be utilized as to not throw off the model.
+### Changes Made to the model from seg 2 to 3
+One of the main changes form segment 2 to segment 3 is the removal of the "Score" and "Number of Comments" columns from the training and testing datasets.  We found that both of those columns had much higher totals for WallStreetBets than it did for the 2 other subreddits, thus causing our model to see that and be able to return a 100% accuracy score.
+### Training of Model
+After removal of the "Score" and "Number of Comments" columns our model is returning a more accurate score for a MLM.  
+### Accuracy Score
+Currently our score is at 67%.  We will continue to refine this model, as we suspect this may be because it is marking everything as 0 which with .333 of our dataset being given to each subreddit, our model is essentially "cheating" its way to that score.
+## Slide Presentation
 
-As well, will be meeing both Tuesday & Thursday during class time, as well as a check in on Sunday morning.
+https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit?usp=sharing
