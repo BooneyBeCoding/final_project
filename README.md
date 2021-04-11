@@ -67,3 +67,6 @@ As well, after adding back in the "Score" and "Number of Comments" tabs, the ori
 ## Slide Presentation
 
 https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit?usp=sharing
+
+## Dasboard
+https://public.tableau.com/profile/paul.smith1805#!/vizhome/final_projectGroup6/final_projectGroup6
