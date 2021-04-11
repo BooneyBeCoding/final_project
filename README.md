@@ -62,7 +62,7 @@ After removing the r/stocks sets from the DF, we recieved a score of 50% though 
 
 With the additions of adding Neural Nets, and optomizations, we could raise the accuracy up to 64%.
 
-As well, after adding back in the "Score" and "Number of Comments" tabs, the origional model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 90%+.
+As well, after adding back in the "Score" and "Number of Comments" tabs, the origional model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 100%.
 
 ## Slide Presentation
 
