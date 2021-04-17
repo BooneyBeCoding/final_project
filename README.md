@@ -69,3 +69,5 @@ https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn
 
 ## Dasboard
 https://public.tableau.com/profile/paul.smith1805#!/vizhome/final_projectGroup6/final_projectGroup6
+
+![](https://github.com/BooneyBeCoding/final_project/blob/Smith-Branch-Pt4/dashboard_final.PNG)
