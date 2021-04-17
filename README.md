@@ -40,8 +40,7 @@ identify posts based purely on the sentiment analysis.
 6. PostgreSQL - database housing and management
 7. Vader - Python package for Sentiment Analysis
 8. Tableau - visualization
-9. HTML & CSS - visualization
-10. VS Code Basic - file creation, idea structure, and organization
+9. VS Code Basic - file creation, idea structure, and organization
 
 ## Machine Learning Model
 Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.  
