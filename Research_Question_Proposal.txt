@@ -1,3 +1,0 @@
-RESEARCH QUESTION AND PROPOSAL:
-The 3 most prominent subreddits whose communities are built around the topic of stock market investing each have different constructions of culture. 
-By running a sentiment-gauging cross-analysis over the headline/title of posts of each, can we teach a Machine Learning model to discern which of the subreddits was most likely the subreddit of origin?
