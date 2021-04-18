@@ -49,6 +49,9 @@ Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a L
 The Dataset we are utilizing is very well formatted and uniform.  For preprosessing, we removed the "Body" column from the dataframe as it was not always utilized by the post, and not necessary for what we are wanting to train the model on. As well, after adding 4 columns to the DF for the Vader analysis, we modified the "subreddit" column to return a 1 if the post was from r/WallStreetBets and a 0 if the post was from r/stocks or r/investing.
 ### Feature Engineering & Selection
 As mentioned above, we have chosen to utilize [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) to read the "title" of each post and return a sentiment score for positive, negative, neutral, and compound.  We chose Vader as it is an MIT created open source sentiment analysis tool that specializes in social media.  Once run on each post, these scores were then added to each post in the dataframe.
+
+![](https://github.com/BooneyBeCoding/final_project/blob/main/Resources/sum%20of%20Vader%20for%20each%20subreddit.PNG)
+
 ### Data Spliting
 As of now, the data splitting is set to randomizing the test and train datasets.  
 ### Model Choice
@@ -58,7 +61,9 @@ One of the main changes form segment 2 to segment 3 is the removal of the "Score
 
 ![](https://github.com/BooneyBeCoding/final_project/blob/main/Resources/MLM%20total%20100%20percent.PNG)
 
-Upon further evaluation, we realized the model was marking everything at 0 "not WSB" and getting a 2 thirds score (67%) as that is basically what the dataset breaks down to be. One of the reasons for this was that the r/stocks and r/WallStreetBets sentiment scores were very similar.  As well the dataset was scewed to have 1/3 be from WSB and 2/3 be from not WSB.  
+Upon further evaluation, we realized the model was marking everything at 0 "not WSB" and getting a 2 thirds score (67%) as that is basically what the dataset breaks down to be. One of the reasons for this was that the r/stocks and r/WallStreetBets sentiment scores were very similar.  As well the dataset was scewed to have 1/3 be from WSB and 2/3 be from not WSB.
+
+![](https://github.com/BooneyBeCoding/final_project/blob/main/Resources/MLM%20total%2068%20percent.PNG)
 
 After removing the r/stocks sets from the DF, we recieved a score of 50% though you could see the DF trying to acutally guess.
 
