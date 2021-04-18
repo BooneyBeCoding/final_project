@@ -43,7 +43,8 @@ identify posts based purely on the sentiment analysis.
 9. VS Code Basic - file creation, idea structure, and organization
 
 ## Machine Learning Model
-Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.  
+Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.
+
 ### Data PreProcessing for MLM
 The Dataset we are utilizing is very well formatted and uniform.  For preprosessing, we removed the "Body" column from the dataframe as it was not always utilized by the post, and not necessary for what we are wanting to train the model on. As well, after adding 4 columns to the DF for the Vader analysis, we modified the "subreddit" column to return a 1 if the post was from r/WallStreetBets and a 0 if the post was from r/stocks or r/investing.
 ### Feature Engineering & Selection
@@ -54,6 +55,8 @@ As of now, the data splitting is set to randomizing the test and train datasets.
 Since we are training our model to determine if posts are from WSB or not off of Sentiment Analysis, we are utilizing Logistic Regression for our Machine Learning Model.  This model has the benefit of being quick to run and rather easy to understand, yet has some limitation when it comes to what pieces of the dataset can be utilized as to not throw off the model.
 ### Changes Made to the model from seg 2 to 3
 One of the main changes form segment 2 to segment 3 is the removal of the "Score" and "Number of Comments" columns from the training and testing datasets.  We found that both of those columns had much higher totals for WallStreetBets than it did for the 2 other subreddits, thus causing our model to see that and be able to return a 100% accuracy score.
+
+![](https://github.com/BooneyBeCoding/final_project/blob/main/Resources/MLM%20total%20100%20percent.PNG)
 
 Upon further evaluation, we realized the model was marking everything at 0 "not WSB" and getting a 2 thirds score (67%) as that is basically what the dataset breaks down to be. One of the reasons for this was that the r/stocks and r/WallStreetBets sentiment scores were very similar.  As well the dataset was scewed to have 1/3 be from WSB and 2/3 be from not WSB.  
 
