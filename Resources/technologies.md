@@ -18,11 +18,9 @@ TECHNOLOGIES and METHODOLOGIES LIST:
     -the above package is what we largely be applying to our existing dataset to (hopefully) provide discernible and quantifiable difference between the 3 main sources for our dataset--this package is already fully built out for Python, as well
 8. Tableau - visualization
     -for graphs, word maps, and other visualizations, we chose Tableau as it is one of the major technologies for presentation valued in the professional environment and broadening our familiarity with it is both a useful tool for the team members as well as being marketable to potential future employers
-9. HTML & CSS - visualization
-    -this will primarily be used inside of our virtual environment to help represent some of the earlier graphical models we intend to produce
-10. VS Code Basic - file creation, idea structure, and organization
+9. VS Code Basic - file creation, idea structure, and organization
     -markdown, structuring and planning, and other drafting instances are easy to manage through this program/text editor
-11. Pandas - data cleaning
+10. Pandas - data cleaning
     -formatting and applying uniform transformation to the mostly structured but still somewhat raw data in our kaggle set needs to be done, and this is what we chose to do that with, given our present levels of exposure
-12. SciKitLearn - Machine Learning/logistic regression
+11. SciKitLearn - Machine Learning/logistic regression
     -SKLearn is really the resource we think ought to be applied for our Machine Learning model, given that our plan is to run logistic regression over our refactored results and data to answer the origional Research Question / Proposal
