@@ -71,6 +71,9 @@ With the additions of adding Neural Nets, and optimizations, we could raise the 
 
 As well, after adding back in the "Score" and "Number of Comments" tabs, the original model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 90%+.
 
+### Conclusion of Model
+In conclusion we found that our model was insufficiant and could not reach our hypothesis.
+
 ## Slide Presentation
 
 https://docs.google.com/presentation/d/1OHD0zEzcUYN0IbASrJJ2OZe9RWMEJugxxqiC2-yn4fM/edit?usp=sharing
