@@ -1,6 +1,21 @@
 # final_project
 
 ## RESEARCH QUESTION AND PROPOSAL:
+
+Social Media represents an incredible source of data, provided directly from people with a minimum of filters in realtime. There has been a massive increase in volume in recent years.
+
+But most of the data is “analog” natural language spoken person-to-person. Language has a lot of subtly and nuance; hard for computers to interpret.
+	⁃	Even limited frame, eg. Siri/Alexa, much less conversations/comments.
+
+Still, too valuable for companies to ignore. Applications include:
+	⁃	Market Research
+	⁃	Troubleshooting
+	⁃	Failure/Fielding Analysis
+	⁃	Content Filtering (eg YouTube)
+	⁃	Etc. 
+  
+“We would like to investigate whether or not natural language social media posts (represented by the titles of Reddit posts from three related subreddits) can be classified by a Machine Learning model, after the title strings have been converted into a multi element numerical string by the open source VADER sentiment analysis package. The theory is that the different subreddits, even on a similar topic, have different cultures, and therefore a different “feel” to the kinds of posts that are successful. We want to see if VADER can pick up on these difference, and if so, if they can be combined with Machine Learning as a simple first pass classification filter.”
+  
 - The 3 most prominent subreddits whose communities are built around the topic of stock market investing each have different constructions of culture. 
 - By running a sentiment-gauging cross-analysis over the headline/title of posts of each, can we teach a Machine Learning model to discern which of the subreddits was most likely the subreddit of origin?
 
