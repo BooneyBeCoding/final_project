@@ -37,39 +37,43 @@ identify posts based purely on the sentiment analysis.
 3. Github - version management
 4. Python - scripting language
 5. Quickbase App - ERD
-6. PostgreSQL - database housing and management
+6. SQLite and SQLAlchemy - database housing and management
 7. Vader - Python package for Sentiment Analysis
 8. Tableau - visualization
 9. VS Code Basic - file creation, idea structure, and organization
 
 ## Machine Learning Model
-Utilizing Vader Sentiment Analysisn on the titles of each subreddit post and a Logistic Regression model to analyse the vader scores to determine if a post came from WallStreetBets or not.  The model runs at 100% currently.
+Utilizing VADER Sentiment Analysis on the titles of each subreddit post and a Logistic Regression model to analyse the VADER scores to determine if a post came from WallStreetBets or not.  The model ran at 100% initially, but this was due to biased fields.
 
 ### Data PreProcessing for MLM
 The Dataset we are utilizing is very well formatted and uniform.  For preprosessing, we removed the "Body" column from the dataframe as it was not always utilized by the post, and not necessary for what we are wanting to train the model on. As well, after adding 4 columns to the DF for the Vader analysis, we modified the "subreddit" column to return a 1 if the post was from r/WallStreetBets and a 0 if the post was from r/stocks or r/investing.
 ### Feature Engineering & Selection
-As mentioned above, we have chosen to utilize [Vader Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) to read the "title" of each post and return a sentiment score for positive, negative, neutral, and compound.  We chose Vader as it is an MIT created open source sentiment analysis tool that specializes in social media.  Once run on each post, these scores were then added to each post in the dataframe.
+As mentioned above, we have chosen to utilize [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) to read the "title" of each post and return a sentiment score for positive, negative, neutral, and compound.  We chose Vader as it is an Georgia Tech created open source sentiment analysis tool that specializes in social media. It generates the four element score based on both lexicon and rule-based criteria. For more information, see here:
+
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
+
+Once run on each post, these scores were then added to each post in the dataframe.
 
 ![](https://github.com/BooneyBeCoding/final_project/blob/main/Images/sum%20of%20Vader%20for%20each%20subreddit.PNG)
 
 ### Data Spliting
-As of now, the data splitting is set to randomizing the test and train datasets.  
+The data splitting is set to randomizing the test and train datasets, and an 80/20 train/test split.  
 ### Model Choice
 Since we are training our model to determine if posts are from r/wallstreetbets or not through the Sentiment Analysis, we are utilizing Logistic Regression for our Machine Learning Model.  This model has the benefit of being quick to run and rather easy to understand yet has some limitation when it comes to what pieces of the dataset can be utilized as to not throw off the model.
 ### Changes Made to the model from seg 2 to 3
-One of the main changes form segment 2 to segment 3 is the removal of the "Score" and "Number of Comments" columns from the training and testing datasets.  We found that both of those columns had much higher totals for r/wallstreetbets than it did for the 2 other subreddits, thus causing our model to see that and be able to return a 100% accuracy score.
+One of the main changes from segment 2 to segment 3 is the removal of the "Score" and "Number of Comments" columns from the training and testing datasets.  We found that both of those columns had much higher totals for r/wallstreetbets than it did for the 2 other subreddits, thus causing our model to see that and be able to return a 100% accuracy score.
 
 ![](https://github.com/BooneyBeCoding/final_project/blob/main/Images/MLM%20total%20100%20percent.PNG)
 
-Upon further evaluation, we realized the model was marking everything at 0 "not WSB" and getting a 2 thirds score (67%) as that is basically what the dataset breaks down to be. One of the reasons for this was that the r/stocks and r/WallStreetBets sentiment scores were remarkably similar.  As well the dataset was skewed to have 1/3 be from WSB and 2/3 be from not WSB.
+Upon further evaluation, we realized the model was marking everything at 0 "not WSB" and getting a 2/3rd score (67%) as that is basically what the dataset breaks down to be. One of the reasons for this was that the r/stocks and r/WallStreetBets sentiment scores were remarkably similar.  As well the dataset was skewed to have 1/3 be from WSB and 2/3 be from not WSB.
 
 ![](https://github.com/BooneyBeCoding/final_project/blob/main/Images/MLM%20total%2068%20percent.PNG)
 
-After removing the r/stocks sets from the DF, we received a score of 50% though you could see the DF trying to guess.
+After removing the r/stocks sets from the DF, we received a score of 50%, though you could now see the model trying to guess.
 
-With the additions of adding Neural Nets, and optimizations, we could raise the accuracy up to 64%.
+With the additions of added Neural Nets, and optimizations, we were able to raise the accuracy up to 64%.
 
-As well, after adding back in the "Score" and "Number of Comments" tabs, the original model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 90%+.
+As well, after adding back in the "Score" and "Number of Comments" tabs, the original model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 90%+, but this would defeat the point of the evaluation, given the strong size bias of those two fields.
 
 ### Conclusion of Model
 In conclusion we found that our model was insufficiant and could not reach our hypothesis.  With more time we would pull data directly from the Reddit API for a more fleshed out source of data with more points to train our model on.  As well we sould also potentially use a different model with more subreddit's involved.
