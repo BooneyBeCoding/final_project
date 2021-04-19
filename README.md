@@ -72,7 +72,7 @@ With the additions of adding Neural Nets, and optimizations, we could raise the 
 As well, after adding back in the "Score" and "Number of Comments" tabs, the original model was running at a 50% accuracy, when adding a neural net to the model, the accuracy grew to 90%+.
 
 ### Conclusion of Model
-In conclusion we found that our model was insufficiant and could not reach our hypothesis.
+In conclusion we found that our model was insufficiant and could not reach our hypothesis.  With more time we would pull data directly from the Reddit API for a more fleshed out source of data with more points to train our model on.
 
 ## Slide Presentation
 
